@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Placing user order and redirecting to Stripe Checkout
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173"; // Change to deployed frontend URL in production
+  const frontend_url = "https://food-frontend-xura.onrender.com"; 
 
   try {
     // Save order details in the database
